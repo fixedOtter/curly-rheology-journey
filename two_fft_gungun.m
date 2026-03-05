@@ -28,7 +28,7 @@ function [freq1,freq2,ratio] = two_fft_gungun(sig1,sig2,freq)
   P1Y(2:end-1) = 2*P1Y(2:end-1);
 
   % refine the range to driving frequency?
-  disp(round(freq/f(2))-25);
+  % disp(round(freq/f(2))-25);
   P1X = P1X(round(freq/f(2))-25:round(freq/f(2))+25);
   P1Y = P1Y(round(freq/f(2))-25:round(freq/f(2))+25);
   [freq1,~] = max(P1X);

@@ -32,16 +32,17 @@ for i = 1:length(materials)
     end
 end
 
-% fprintf(ratio_mat);
-% fprintf(ratio_mat,'%f\t',T');
-fprintf([repmat('%f\t', 1, size(ratio_mat, 2)) '\n'], ratio_mat');
+% print the matrix of ratios. 
+% troubleshooting needed for some of our data.
+disp('Acceleration Ratios:');
+disp(ratio_mat);
 
 % plot
 figure
 hold on
-plot(freq,ratio_mat(1,:), 'b-o')
-plot(freq,ratio_mat(2,:), 'g-o')
-plot(freq,ratio_mat(3,:), 'r-o')
+plot(freq,ratio_mat(1,:), 'c-.')
+plot(freq,ratio_mat(2,:), 'g-square')
+plot(freq,ratio_mat(3,:), 'm--o')
 
 % labels on the plots
 xlabel('Frequency in Hz','fontsize', 16)
