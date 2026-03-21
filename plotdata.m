@@ -1,6 +1,6 @@
 % made by gunbar
 
-matrix = readmatrix("./data_mod/gly_45hz.txt");
+matrix = readmatrix("../gly_45hz.txt");
 ball = matrix(:,1);
 speaker = matrix(:,2);
 

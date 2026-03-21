@@ -40,7 +40,7 @@ disp(ratio_mat);
 % plot
 figure
 hold on
-plot(freq,ratio_mat(1,:), 'c-.')
+plot(freq,ratio_mat(1,:), 'c-.pentagram')
 plot(freq,ratio_mat(2,:), 'g-square')
 plot(freq,ratio_mat(3,:), 'm--o')
 
